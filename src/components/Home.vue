@@ -1,22 +1,26 @@
 <template>
-  <md-tabs>
-    <md-tab md-label="Home" md-icon="home"></md-tab>
-    <md-tab md-label="Pages" md-icon="pages"></md-tab>
-    <md-tab md-label="Posts" md-icon="add_to_home_screen"></md-tab>
-    <md-tab md-label="Favorites" md-icon="favorite"></md-tab>
-  </md-tabs>
+  <div class="main">
+    <div class="playfair"><h1>We love tackling fun & challenging design projects</h1></div>
+  </div>
 </template>
 
 <script>
 
 export default {
-  name: 'Home'
+  name: 'home'
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .md-tabs + .md-tabs {
-    margin-top: 24px;
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  .playfair {
+    color: rgba(255,255,255,0.7);
+    font-size: 30px;
+    font-family: "Playfair Display SC", serif;
+    border-bottom: 1px solid #424242;
   }
 </style>
