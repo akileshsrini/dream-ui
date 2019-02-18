@@ -6,7 +6,9 @@
       <md-tab id="posts" md-label="Posts" md-icon="favorite" href="#/posts"></md-tab>
       <md-tab id="contact" md-label="Contact Us" md-icon="phone" href="#/contact"></md-tab>
     </md-tabs>
-    <router-view/>
+    <div class="route-margin">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -22,5 +24,8 @@ export default {
 <style scoped>
   .md-tabs + .md-tabs {
     margin-top: 24px;
+  }
+  .route-margin {
+    padding: 0 10px 0 10px;
   }
 </style>
